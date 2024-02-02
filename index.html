@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        html {
+  min-height: 100%;/* fill the screen height to allow vertical alignement */
+  display: grid; /* display:flex works too since body is the only grid cell */
+}
+
+body {
+  margin: auto;
+}
+    </style>
     <head>
         <title>Search</title>
         <div align="right">
@@ -7,7 +17,7 @@
             <a href="/Project-0/advance.html">Advanced Search</a>
         </div>
     </head>
-    <body display="flex">
+    <body>
         <form align="center" align-items="center" action="https://www.google.com/search">
             <input type="text" name="q">
             <br><br>
