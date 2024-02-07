@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <style>
+            .hovery{
+                background-color: rgba(237, 231, 225, 0.5);border-radius: 5px; border-style: none;
+            }
+            .hovery:hover{
+                border-style: solid;
+            }
+        </style>
         <title>Image Search</title>
-        <div align="right">
+        <div style="text-align: right;">
             <a href="/Project-0/index.html">Google Search</a>
             <a href="/Project-0/advance.html">Advanced search</a>
         </div>
     </head>
     <body>
-        <form align="center" align-items="center" action="https://www.google.com/search">
-            <input type="text" name="q">
-            <br><br>
-            <input type="hidden" name="tbm" value="isch">
-            <input type="submit" value="Google Search">
-        </form>
+        <div style="display: flex;align-items: center;height: 100vh;text-align: center;justify-content: center;">
+            <form action="https://www.google.com/search">
+                <input type="text" name="q">
+                <br><br>
+                <input type="hidden" name="tbm" value="isch">
+                <input class="hovery" type="submit" value="Google Search" >
+            </form>
+        </div>
     </body>
 </html>

@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <style>
+        p{
+            width: 20%
+        }
+        input{
+            width:70%
+        }
+        </style>
         <title>Advanced Search</title>
-        <div align="right">
-            <a href="/Project-0/index.html">Google Search</a>
-            <a href="/Project-0/image.html">Image Search</a>
-        </div>
     </head>
     <body>
+    <div style="text-align: right;">
+        <a href="/Project-0/index.html">Google Search</a>
+        <a href="/Project-0/image.html">Image Search</a>
+    </div>
 
-    
-    <form align="center" action="https://www.google.com/search">
-        <input class="jfk-textinput" autofocus="autofocus" name="as_q" type="text">
-        <input type="submit" value="All these words">
-    </form>
-    <form align="center" action="https://www.google.com/search">
-        <input class="jfk-textinput" name="as_epq" type="text">
-        <input type="submit" value="This exact word phrase">
-    </form>
-    <form align="center"action="https://www.google.com/search">
-        <input class="jfk-textinput" name="as_oq" type="text">
-        <input type="submit" value="Any of these words">
-    </form>
-    <form align="center"action="https://www.google.com/search">
-        <input class="jfk-textinput" name="as_eq" type="text">
-        <input type="submit" value="None of these words">
-    </form>
+    <div style="display: inline-flex;align-items: center;flex-wrap: wrap;width: 34%;position: relative;">
+        <form action="https://www.google.com/search" style="position: absolute;display: contents;">
+            <p style="padding: 10px;">All these words</p>
+            <input class="jfk-textinput" autofocus="autofocus" name="as_q" type="text">
+            <p style="padding: 10px;">This exact word phrase</p>
+            <input class="jfk-textinput" name="as_epq" type="text">
+            <p style="padding: 10px;">Any of these words</p>
+            <input class="jfk-textinput" name="as_oq" type="text" style="
+        ">
+            <p style="padding: 10px;">None of these words</p>
+            <input class="jfk-textinput" name="as_eq" type="text">
+            <input type="submit" style="margin-left: auto;background-color: blue;color: white;position: relative;border-radius: 5px;width: fit-content;" value="Advanced Search">
+        </form>
+    </div>
+
+
+
     </body>
 </html>
